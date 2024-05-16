@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "621404207559",
+    "project_id": "conversor-play",
+    "storage_bucket": "conversor-play.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621404207559:android:c742b0edd55cdd266cc1e2",
+        "android_client_info": {
+          "package_name": "com.fabiosilva.packconvert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlaCvSxvCUH3lmE-L_ABUFcpuu00NelXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
