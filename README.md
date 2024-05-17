@@ -1,5 +1,3 @@
-Claro, aqui está um exemplo de README para o seu aplicativo Apk-AAB-Converter:
-
 
 # Apk-AAB-Converter
 
