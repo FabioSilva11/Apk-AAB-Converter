@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_outline"
-        android:backgroundTint="@color/colorDialogBackground"
+        android:backgroundTint="#FFFFFF"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -54,19 +54,22 @@
                 android:layout_height="wrap_content"
                 android:enabled="false" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <CheckBox
             android:id="@+id/cb_default_gradle_config"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usar configuração padrão do AGP"
             android:checked="true"
+            android:text="Usar configuração padrão do AGP"
             tools:ignore="HardcodedText" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
             android:text="As opções abaixo são opcionais. Clique aqui para mais informações sobre essas opções."
             tools:ignore="HardcodedText" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_config_path"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -94,10 +97,10 @@
             android:layout_height="wrap_content"
             android:text="Adicionar arquivo de metadados"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
-            android:textColor="@color/white"
             app:backgroundTint="?colorPrimary"
             app:cornerRadius="8dp"
             tools:ignore="HardcodedText" />
+
         <CheckBox
             android:id="@+id/cb_verbose"
             android:layout_width="wrap_content"
@@ -111,12 +114,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_sign_options"
+            android:name="com.fabiosilva.packconvert.fragment.SignOptionsFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:tag="SignOptionsFragment"
-            android:name="com.fabiosilva.packconvert.fragment.SignOptionsFragment"/>
+            android:tag="SignOptionsFragment" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_apk_to_aab"
             style="@style/Widget.MaterialComponents.Button"
@@ -126,7 +131,6 @@
             android:padding="8dp"
             android:text="Criar AAB"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
-            android:textColor="@color/white"
             android:textSize="12sp"
             app:backgroundTint="?colorPrimary"
             app:cornerRadius="8dp"
