@@ -8,12 +8,12 @@
     tools:context=".fragment.ApkToAABDialogFragment">
 
     <LinearLayout
+        android:id="@+id/cnd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_outline"
-        android:backgroundTint="#FFFFFF"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="?attr/backgroundColor">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_apk_path"
