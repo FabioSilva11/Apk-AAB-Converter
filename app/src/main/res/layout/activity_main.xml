@@ -1,66 +1,103 @@
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:id="@+id/linear1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="vertical"
-        android:padding="8dp">
-
+        android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/btn_aab_to_apk"
+            android:id="@+id/linear1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="50"
-            android:gravity="center_horizontal|center_vertical"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <TextView
-                android:id="@+id/textview2"
-                android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="CONVERTER APK PARA AAB"
-                android:textColor="#2196F3"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/btn_aab_to_apk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_margin="3dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adview1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-2706500450375916/4827445290" />
+                    <ImageView
+                        android:id="@+id/imageview1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/aabicone" />
 
-        <LinearLayout
-            android:id="@+id/btn_apk_to_aab"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="50"
-            android:gravity="center_horizontal|center_vertical"
-            android:orientation="horizontal"
-            android:padding="8dp">
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="CONVERTER APK PARA AAB"
+                        android:textColor="@color/teal_200"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_apk_to_aab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_margin="3dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
+
+                    <ImageView
+                        android:id="@+id/imageview2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/apkicone" />
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="CONVERTER AAB PARA APK"
+                        android:textColor="@color/teal_200"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal" >
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-2706500450375916/4827445290" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textview3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="CONVERTER AAB PARA APK"
-                android:textColor="#2196F3"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:padding="10dp"
+                android:text="@string/extra"
+                android:textColor="@color/teal_200"
+                android:textSize="16sp" />
         </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+        </LinearLayout>

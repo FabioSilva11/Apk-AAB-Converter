@@ -7,4 +7,5 @@
     <string name="selecy_output_path">Selecionar caminho de saída</string>
     <string name="select_output_path">Selecionar caminho de saída</string>
     <string name="banner_ad_unit_id">ca-app-pub-2706500450375916/4827445290</string>
+    <string name="extra">## Como Usar\n1. Faça o download e instale o Apk-AAB-Converter em seu dispositivo Android.\n2. Abra o aplicativo e selecione a opção \"Converter APK para AAB\" ou \"Converter AAB para APK\", dependendo da sua necessidade.\n3. Selecione o arquivo APK ou AAB que deseja converter.\n4. Aguarde o processo de conversão ser concluído.\n5. O arquivo convertido será salvo na pasta de saída padrão.\n\n## Contribuindo\nContribuições são bem-vindas! Se você deseja contribuir com novos recursos, correções de bugs ou melhorias na interface, sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull request.</string>
 </resources>

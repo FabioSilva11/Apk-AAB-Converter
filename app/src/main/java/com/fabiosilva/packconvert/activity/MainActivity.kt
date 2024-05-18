@@ -64,10 +64,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
-        styleButton(binding.btnAabToApk)
-        styleButton(binding.btnApkToAab)
     }
 
     private fun loadRewardedAd() {
@@ -120,23 +116,6 @@ class MainActivity : AppCompatActivity() {
             ApkToAABDialogFragment.newInstance().show(
                 supportFragmentManager, AABToApkDialogFragment::class.java.simpleName
             )
-        }
-    }
-
-    private fun styleButton(button: View) {
-        val drawable = GradientDrawable().apply {
-            setColor(Color.parseColor("#FFEAF2FD"))
-            cornerRadius = 19f
-            setStroke(1, Color.parseColor("#FF17042A"))
-        }
-        val rippleDrawable = RippleDrawable(
-            ColorStateList.valueOf(Color.parseColor("#FF181830")),
-            drawable,
-            null
-        )
-        button.background = rippleDrawable
-        if (Build.VERSION.SDK_INT >= 21) {
-            button.elevation = 3f
         }
     }
 
